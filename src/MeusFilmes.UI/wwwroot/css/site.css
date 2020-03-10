@@ -1,0 +1,241 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+
+/* control image height */
+.card-img-top-250 {
+  max-height: 250px;
+  overflow:hidden;
+}
+
+/* smoother transitions */
+.carousel-inner>.carousel-item.next.left,
+.carousel-inner>.carousel-item.prev.right
+{
+  transition: all 1s ease;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {
+  color: #FFF;  
+  background-color: #212121;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #212121;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #DE0418;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #DE0418; 
+}
+
+.main {
+  padding-top: 7.5rem;
+  margin: 0 2%;
+}
+
+nav.navbar {
+  position: fixed;
+  background-color: #000000;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.nav-after {
+  position: fixed;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  content: '';
+  z-index: 1;
+  opacity: .8;
+}
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Card */
+
+.card{
+  background-color: transparent;
+  border-radius: 5px;
+  /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)*/
+  box-shadow: inset 0 0px 0px rgba(128,128,128.3), 0 0px 2px rgba(128,128,128, 0.5);
+}
+
+.card .card-title {
+  font-size: 16px;
+}
+.card .card-text{
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.card .card-footer{
+  background-color: transparent;
+}
+
+.card .badge{
+font-size: 12px;
+  font-weight: 300;
+  padding: 0.5em 0.4em;
+  border-radius: 0;
+}
+
+/* DATA TABLE */
+
+.page-item a{
+  background-color: #DC3545;
+  color: #FFF;
+}
+.page-item.active a{
+  background-color: #007BFF;
+ 
+}
+
+.page-item.disabled .page-link {
+  border: none;
+  background-color: #343A40;
+}
+
+/* Provide sufficient contrast against white background */
+
+.footer a {
+  text-decoration: none; 
+    color: #FFF;
+}
+.footer a:hover{
+  color: rgba(246,96,53,1);
+}
+
+.footer a .fa:hover {
+  color: rgba(246,96,53,1);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+  /* Vertically center the text there */
+  background-color: #1a191f;
+  padding-bottom: 3vh;
+
+}
+
+.flex-center {
+  width: 100%;
+  margin-top: 8vh;
+  margin-bottom: 3vh;
+  background-color: #1a191f;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.icon-3d {
+  padding: 0 30px;
+  -webkit-animation: icon3d 200ms 10;
+  animation: icon3d 200ms 10;
+  color: #fff;
+}
+.fa.fa-star-o, .fa.fa-list{
+  color: #FDB62F;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 660px) {
+  .navbar-brand {
+    padding-left: 5.5rem;
+  }
+  .navbar-nav-right {
+    padding-right: 5.5rem;
+  }
+}
+

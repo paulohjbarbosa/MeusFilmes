@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies Popcorn.: @ViewData["Title"] </title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm">
+
+
+            <i class="navbar-brand">
+                <img src="~/movies/10.png" height="44" alt="Star Wars Movies">
+            </i>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto"></ul>
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item"><i class="fa fa-phone" aria-hidden="true"></i> (+000) 123 345 653</li>
+
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-2x fa-bars text-white "></span>
+            </button>
+
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="mt-4 footer text-muted text-center">
+
+        <div class="container">
+            <div class="flex-center">
+                <a href="https://github.com/phjb/" target="_blank"> <i class="fa fa-github fa-2x icon-3d"></i></a>
+                <a href="http://phjb.com.br/" target="_blank"> <i class="fa fa-dribbble fa-2x icon-3d"></i></a>
+                <a href="https://twitter.com/PauloDeveloper" target="_blank"> <i
+                        class="fa fa-twitter fa-2x icon-3d"></i></a>
+                <a href="https://www.linkedin.com/in/paulo-henrique-barbosa-657b7848/" target="_blank"> <i
+                        class="fa fa-linkedin fa-2x icon-3d"></i></a>
+
+            </div>
+            &copy; 2020 Movies Popcorn - Create by <a href="http://phjb.com.br/" target="_blank">Paulo Barbosa</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>

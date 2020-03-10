@@ -1,0 +1,192 @@
+﻿@model IEnumerable<MeusFilmes.Business.Entities.Filme>
+
+@{
+ViewData["Title"] = "Movies";
+}
+
+<div class="row mb-3">
+    <div class="col-sm-12">
+        <h5><i class="fa fa-star-o" aria-hidden="true"></i>&nbsp;&nbsp;Filmes em Destaque</h5>
+    </div>
+</div>
+
+<div class="card-group">
+    <div class="card">
+      <img class="card-img-top" src="~/movies/1.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+       
+      </div>
+      <div class="card-footer text-muted">
+        <ul class="list-unstyled list-inline d-flex justify-content-between mb-0">
+            <li class="list-inline-item mr-0">
+              <div class="badge badge-danger  mr-0">5:30PM</div>
+            </li>
+            <li class="list-inline-item mr-0">
+              <div class="badge badge-danger  deep-purple white-text mr-0">7:30PM</div>
+            </li>
+            <li class="list-inline-item mr-0">
+              <div class="badge badge-danger  mr-0">8:00PM</div>
+            </li>
+            <li class="list-inline-item mr-0">
+              <div class="badge badge-danger  mr-0">9:00PM</div>
+            </li>
+          </ul>
+
+      </div>
+     
+
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="~/movies/2.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <ul class="list-unstyled list-inline d-flex justify-content-between mb-0">
+            <li class="list-inline-item mr-0">
+              <div class="badge badge-danger  mr-0">5:30PM</div>
+            </li>
+            <li class="list-inline-item mr-0">
+              <div class="badge badge-danger  deep-purple white-text mr-0">7:30PM</div>
+            </li>
+            <li class="list-inline-item mr-0">
+              <div class="badge badge-danger  mr-0">8:00PM</div>
+            </li>
+            <li class="list-inline-item mr-0">
+              <div class="badge badge-danger  mr-0">9:00PM</div>
+            </li>
+          </ul>
+
+      </div>
+     
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="~/movies/3.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <ul class="list-unstyled list-inline d-flex justify-content-between mb-0">
+            <li class="list-inline-item mr-0">
+              <div class="badge badge-danger  mr-0">5:30PM</div>
+            </li>
+            <li class="list-inline-item mr-0">
+              <div class="badge badge-danger  deep-purple white-text mr-0">7:30PM</div>
+            </li>
+            <li class="list-inline-item mr-0">
+              <div class="badge badge-danger  mr-0">8:00PM</div>
+            </li>
+            <li class="list-inline-item mr-0">
+              <div class="badge badge-danger  mr-0">9:00PM</div>
+            </li>
+          </ul>
+
+      </div>
+     
+    </div>
+
+    <div class="card">
+        <img class="card-img-top" src="~/movies/4.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  
+          <ul class="list-unstyled list-inline d-flex justify-content-between mb-0">
+              <li class="list-inline-item mr-0">
+                <div class="badge badge-danger  mr-0">5:30PM</div>
+              </li>
+              <li class="list-inline-item mr-0">
+                <div class="badge badge-danger  deep-purple white-text mr-0">7:30PM</div>
+              </li>
+              <li class="list-inline-item mr-0">
+                <div class="badge badge-danger  mr-0">8:00PM</div>
+              </li>
+              <li class="list-inline-item mr-0">
+                <div class="badge badge-danger  mr-0">9:00PM</div>
+              </li>
+            </ul>
+  
+        </div>
+       
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="~/movies/5.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  
+          <ul class="list-unstyled list-inline d-flex justify-content-between mb-0">
+              <li class="list-inline-item mr-0">
+                <div class="badge badge-danger  mr-0">5:30PM</div>
+              </li>
+              <li class="list-inline-item mr-0">
+                <div class="badge badge-primary white-text mr-0">7:30PM</div>
+              </li>
+              <li class="list-inline-item mr-0">
+                <div class="badge badge-danger  mr-0">8:00PM</div>
+              </li>
+              <li class="list-inline-item mr-0">
+                <div class="badge badge-danger mr-0">9:00PM</div>
+              </li>
+            </ul>
+  
+        </div>
+      
+      </div>
+  </div>
+
+   <div class="row mt-5">
+    <div class="col-sm-6 col-md-3  offset-md-3">
+    <button type="button" class="btn btn-danger btn-lg btn-block"><i class="fa fa-2x fa-filter" aria-hidden="true"></i>&nbsp;Consultar</button>
+    </div>
+     <div class="col-sm-6 col-md-3">
+    <button type="button" class="btn btn-danger btn-lg btn-block">
+      <i class="fa fa-2x fa-plus-square-o" aria-hidden="true"></i>&nbsp;&nbsp;Novo</button>
+    </div>
+   </div>
+<div class="row mt-5">
+    <div class="col-sm-12">
+        <h5><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Lista de Filmes</h5>
+    </div>
+</div>
+  <table class="row mt-5">
+    <table class="col-sm-12">
+      <table class="table table-striped table-hover text-white table-dark dataTable">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Titulo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Duracao)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ano)
+            </th>
+            <th style="width: 140px;">Opções</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duracao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ano)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id"><i class="fa fa-pencil-square" aria-hidden="true"></i></a> 
+                <a asp-action="Details" asp-route-id="@item.Id"><i class="fa fa-eye" aria-hidden="true"></i></a> 
+                <a asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+    </table>
+  </table>
